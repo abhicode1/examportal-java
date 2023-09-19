@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_Letter_Landscape" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d9a91041-6cfd-4864-9ae3-b577716aaa4a">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="FullName" class="java.lang.String"/>
+	<parameter name="Quiz" class="java.lang.String"/>
+	<parameter name="marks" class="java.lang.String"/>
+	<parameter name="Date" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="407" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement x="0" y="-114" width="750" height="521" uuid="6e2b99af-0b2c-4e79-aea6-7a8801c13a66"/>
+				<imageExpression><![CDATA["C:/Users/kcs/Downloads/new.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="130" y="50" width="530" height="160" uuid="5c7974e3-7b21-46c1-bdac-6aa5dfe0bdf4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Vladimir Script" size="75"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{FullName}]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement x="0" y="-114" width="750" height="521" uuid="fb9d6a8d-9894-427d-a9a7-bd16f2818951"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<staticText>
+					<reportElement x="140" y="290" width="480" height="100" uuid="c3f80490-837e-48c6-8727-2500abf734a9"/>
+					<textElement>
+						<font size="16"/>
+					</textElement>
+					<text><![CDATA[for successfully completing                         quiz  with      % marks.]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="340" y="290" width="100" height="30" uuid="4397f73a-c2ff-4745-9bad-b632c6aa5e3d"/>
+					<textElement>
+						<font size="16"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{Quiz}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="380" y="341" width="141" height="30" uuid="4f28d8a8-17c2-406f-9802-01b2c262a8d5"/>
+					<textElement verticalAlignment="Middle">
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{Date}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="221" y="341" width="149" height="30" uuid="356d692b-7317-426f-b78f-1bb7b4fa691a"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="14"/>
+					</textElement>
+					<text><![CDATA[Dated :]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="510" y="292" width="19" height="30" uuid="3dda4fb7-607c-4e03-a946-ae8c7368501f"/>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{marks}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>
